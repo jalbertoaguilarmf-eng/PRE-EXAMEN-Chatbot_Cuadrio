@@ -1,3 +1,28 @@
-node_modules/
+# Local environment and credentials
 .env
+.env.*
+!.env.example
+
+# Dependencies
+/node_modules/
+/laravel-app/node_modules/
+/laravel-app/vendor/
+
+# Compiled and generated Laravel files
+/laravel-app/public/build/
+/laravel-app/bootstrap/cache/*.php
+/laravel-app/storage/framework/cache/data/*
+/laravel-app/storage/framework/sessions/*
+/laravel-app/storage/framework/views/*
+/laravel-app/storage/logs/*.log
+/laravel-app/.phpunit.result.cache
+
+# Local editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
 workspace/
+
+# Keep large video evidence local; screenshots are committed instead
+/docs/evidencias/*.mp4
